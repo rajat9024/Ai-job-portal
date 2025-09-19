@@ -1,0 +1,31 @@
+
+/* Title */
+.job-list-title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #0b3d91;
+}
+
+/* Grid layout */
+.job-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates 4 columns */
+  gap: 5px;
+  width: 100%; /* Set a max-width to center the grid */
+ margin-left: 20px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .job-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .job-grid {
+    grid-template-columns: 1fr;
+  }
+}

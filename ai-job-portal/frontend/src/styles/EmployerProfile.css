@@ -1,0 +1,127 @@
+/* ===== Employer-specific ===== */
+
+.job-section {
+  flex: 1;
+  padding: 1.2rem;
+  border-radius: 14px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: 1px solid rgba(255,255,255,0.03);
+  box-shadow: 0 8px 30px rgba(2,6,23,0.45);
+  
+}
+
+.job-section h3 {
+  margin-top: 0.2rem;
+  color: #101412;
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+}
+
+.employer-jobs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.job-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));
+  border-radius: 12px;
+  padding: 0.9rem;
+  border: 1px solid rgba(255,255,255,0.03);
+  box-shadow: 0 10px 20px rgba(3,10,25,0.45);
+  transition: transform .15s ease, box-shadow .15s ease;
+  color: #071627;
+}
+.job-card:hover {
+  transform: translateY(-6px) rotateX(2deg) scale(1.005);
+  box-shadow: 0 18px 40px rgba(2,12,28,0.6);
+}
+
+.job-card .delete-btn {
+  background: palegreen;
+  color: #140f0f;
+  padding: .4rem .6rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.job-card .delete-btn:hover { transform: translateY(-3px); }
+
+.post-btn {
+  background: linear-gradient(90deg, #083344, #588034d3);
+  color: #ecfff6;
+  width: fit-content;
+}
+.profile-container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* Profile card */
+.profile-card {
+  flex: 0 0 250px;
+  background: #0f1724;
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.profile-avatar {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* Job section */
+.job-section {
+  flex: 1;
+}
+
+/* Jobs grid */
+.employer-jobs-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.employer-jobs-grid .job-card {
+  flex: 1 1 calc(33.333% - 16px);
+  min-width: 280px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .employer-jobs-grid .job-card {
+    flex: 1 1 calc(50% - 16px);
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .profile-container {
+    flex-direction: column;   /* Profile and jobs column */
+    align-items: center;
+  }
+
+  .profile-card {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .job-section {
+    width: 100%;
+  }
+
+  .employer-jobs-grid {
+    flex-direction: column;
+  }
+
+  .employer-jobs-grid .job-card {
+    flex: 1 1 100%;
+    min-width: 100%;
+  }
+}

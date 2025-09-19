@@ -1,0 +1,49 @@
+/* ===== JobSeeker-specific ===== */
+
+.applied-section {
+  margin-top: 20px;
+  color: #071627;
+  font-size: larger;
+}
+
+.applied-section .applied-jobs-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.applied-section .applied-job-card {
+  background-color: #a1c9d0;
+  border-radius: 10px;
+  padding: 15px;
+  color: #0b0d0e;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.applied-section .applied-job-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.withdraw-btn {
+  margin-top: 10px;
+  background: linear-gradient(90deg, #b82a2a, #f05f5f);
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.withdraw-btn:hover { transform: translateY(-2px); }
+@media (max-width: 1024px) {
+  .job-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row */
+  }
+}
+
+@media (max-width: 600px) {
+  .job-grid {
+    grid-template-columns: 1fr; /* 1 per row */
+  }
+}

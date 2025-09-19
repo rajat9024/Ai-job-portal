@@ -1,0 +1,71 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background: white;
+  color: rgb(47, 27, 161);
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  
+}
+
+.navbar .logo a {
+  text-decoration: none;
+  color: rgb(42, 12, 215);
+  font-size: 2.5rem;
+  font-weight: 700;
+  transition: transform 0.2s;
+}
+
+.navbar .logo a:hover {
+  transform: scale(1.05);
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: rgb(1, 4, 15);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.nav-links li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.nav-links li a.active {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.logout-btn {
+  padding: 6px 14px;
+  background: #ff4b5c;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.logout-btn:hover {
+  background: #ff1c33;
+  transform: translateY(-2px);
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

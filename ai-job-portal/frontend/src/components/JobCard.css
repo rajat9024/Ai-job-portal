@@ -1,0 +1,80 @@
+
+.job-card {
+  width: 310px;
+  padding: 16px;
+  margin: 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: inline-block;
+  vertical-align: top;
+  transition: transform 0.2s;
+}
+
+.job-card:hover {
+  transform: translateY(-3px);
+}
+
+.job-title {
+  margin: 8px 0;
+  font-size: 18px;
+  color: #222;
+  
+}
+
+.job-card p {
+  margin: 6px 0;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #333;
+}
+
+.truncate  {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;  /* sirf 1 line dikhayega */
+  -webkit-box-orient: vertical;
+}
+
+.job-actions {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.job-actions button {
+  padding: 5px 10px;
+  font-size: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.view-btn {
+  background: #007bff;
+  color: white;
+}
+
+.edit-btn {
+  background: #ffc107;
+  color: black;
+}
+
+.delete-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.badge {
+  background: red;
+  color: #fff;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 6px;
+
+}
+
